@@ -1,0 +1,5 @@
+:- use_module(library(csv)).
+:- use_module(library(dcgs)).
+:- use_module(library(pio)).
+
+:- phrase_from_file(parse_csv(Data),"data.csv"), write(Data).
