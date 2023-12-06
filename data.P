@@ -1,0 +1,52 @@
+:- module(data,[p/4,m/6]).
+p("1122202321333SwapnilAzad","Swapnil Azad",[167494,41053,103931,838145,81648,242618,284613,366056,94965,796011],"Indian cinema -- to me -- is all about diversity, so the list of films I've selected is also as diverse as it gets. From fiercely independent productions (Duvidha, Nainsukh) to self-funded <br>projects by reputable names (Pyaasa, Saptapadi) to modern big budget entertainers (Okkadu, Sarpatta Parambarai), with even a \"Cinema of Prayoga\" (Om Dar-B-Dar) in the midst! And my favourite picks are two astonishing works of self-reflexive art: Ritwik Ghatak's Jukti Takko aar Gappo, a work of self- flagellation and renunciation, and Payal Kapadia's fairly recent A Night of Knowing Nothing, the boldest debut by any filmmaker in recent times.<br><br>Still, there's room for more, so here goes three honourary mentions: Madhumati, a trendsetter, Om Shanti Om, its follower, and Deewar, a classic Bollywood masaala. With the inclusion of these three, my list finally feels complete.").
+p("1123202312559elena","elena",[256641,264405,549267,822,167494,258541,574069,842361,227211,258486],"Parallel cinema was based.").
+p("1123202315922IskandariaHassan","Iskandaria Hassan",[377985,257641,60579,35053,463636,258486,5801,139357,170991,796011],[]).
+p("1123202320951DevKapoor","Dev Kapoor",[21210,54966,70366,80556,4251,41053,79731,280795,71299,21460],[]).
+p("1123202333937Muthu","Muthu",[786345,949229,858082,987895,848116,872906,885184,937020,864692,918864],[]).
+m(822,"The Music Room","1958",["Satyajit Ray"],"/ggpHGix3OPgIpvIaoojAQ125XJO.jpg","Bengali").
+m(4251,"Veer-Zaara","2004",["Yash Chopra"],"/7rc8qXMjMcemhVFjKP2JWCS1Wpz.jpg","Hindi").
+m(5801,"Pather Panchali","1955",["Satyajit Ray"],"/yS7WUs4z0kRdFo2eNWaEFxYC7oy.jpg","Bengali").
+m(21210,"Dil Se..","1998",["Mani Ratnam"],"/rdnkOPYlHf8WaPRllTz3dsuzpp8.jpg","Hindi").
+m(21460,"Maachis","1996",["Gulzar"],"/1gDubagNmgdSY98PMzU7PbAGUrJ.jpg","Hindi").
+m(35053,"Darr","1993",["Yash Chopra"],"/2pSjVqEWw6IwRnZdBm5Od2NurMg.jpg","Hindi").
+m(41053,"Pyaasa","1957",["Guru Dutt"],"/hS3NbehcPfJ5XElqjZXVD9wsDk1.jpg","Hindi").
+m(54966,"Pakeezah","1972",["Kamal Amrohi"],"/14NOpvX8cfLDWBfE0Dm55hugzo6.jpg","Urdu").
+m(60579,"Hey Ram","2000",["Kamal Haasan"],"/hHaq5QffND0x8dXEqjVPAmFlJv6.jpg","Tamil").
+m(70366,"Sahib Bibi aur Ghulam","1962",["Abrar Alvi"],"/tUVjkGSe7ZRhFoWirqZOh00kNlz.jpg","Hindi").
+m(71299,"Waqt","1965",["Yash Chopra"],"/bOvDhkmqvbWWfxE82fAvU4wZVXO.jpg","Hindi").
+m(79731,"The Seventh Horse of the Sun","1992",["Shyam Benegal"],"/6p1Y2d20ydB49fiS7CEvJLqIan2.jpg","Hindi").
+m(80556,"The Chess Players","1977",["Satyajit Ray"],"/uDvsFcBYjmkjJIXVYgNtkbI9i6K.jpg","Hindi").
+m(81648,"Nainsukh","2011",["Amit Dutta"],"/q4ege0wz10xnidJDm9yL6wh6hzq.jpg","Kashmiri").
+m(94965,"Okkadu","2003",["Gunasekhar"],"/6nJhASwWlfaOZjz1RWJaP9maCoe.jpg","Telugu").
+m(103931,"Duvidha","1973",["Mani Kaul"],"/kYxz3sthJKw8NOhJScICX9F4H5o.jpg","Hindi").
+m(139357,"Pizza","2012",["Karthik Subbaraj"],"/ojC9NacZhfSwUn9aAMXUtDLV52e.jpg","Tamil").
+m(167494,"Reason, Debate and a Story","1974",["Ritwik Kumar Ghatak"],"/7lg3D37J46yUCnKF6Vu0ML7J1lh.jpg","Bengali").
+m(170991,"Maya Memsaab","1993",["Ketan Mehta"],"/lIRLy3RGceFWQ9SMKN26ZudxvLw.jpg","Hindi").
+m(227211,"Rudaali","1993",["Kalpana Lajmi"],"/9fd2KzZPsthboW4DlW3T13lcaVa.jpg","Hindi").
+m(242618,"Om Dar-B-Dar","1988",["Kamal Swaroop"],"/zb0dUPtNoAzfPswbVRWk2EFeEAw.jpg","Hindi").
+m(256641,"Kanchana Sita","1978",["Govindan Aravindan"],"/i0HwBytEhBUOaogObCAgjtuquCE.jpg","Malayalam").
+m(257641,"Arrival","1980",["Mani Kaul"],"/wB16KE1jxsLg8O4z7IN1gihYVaF.jpg","Hindi").
+m(258486,"Report to Mother","1986",["John Abraham"],"/kPLafN8E7ElS9Frr7rQwqIlgJT5.jpg","Malayalam").
+m(258541,"Jai Bhim Comrade","2012",["Anand Patwardhan"],"/bFXRs40SaOpWhoLj5WhvWqLMvCS.jpg","Hindi").
+m(264405,"One Day Before the Rainy Season","1971",["Mani Kaul"],"/ff75cV7myHVXxKg8f9cP35uVvnb.jpg","Hindi").
+m(280795,"Haider","2014",["Vishal Bhardwaj"],"/lOCotkHPODWdsRDMoLbSdLdVT3L.jpg","Hindi").
+m(284613,"Padatik","1973",["Mrinal Sen"],"/1CduNQtNPH54W1i60nXO3Iq1SUq.jpg","Bengali").
+m(366056,"Saptapadi","1961",["Ajoy Kar"],"/4RMIVEfiahDOAGYyvhdPdLuQ2S8.jpg","Bengali").
+m(377985,"Fan","2016",["Maneesh Sharma"],"/ukMYsujfyWhSeIBAc9hGEFEkrJD.jpg","Hindi").
+m(463636,"Abid","1972",["Pramod Pati"],"/a09TICckYfdn5omh6bvgKaiFst9.jpg","Hindi").
+m(549267,"The Unknown Craftsman","2017",["Amit Dutta"],"/zktXT706MY9g2AVLf6H2Fgswjrw.jpg","English").
+m(574069,"That Cloud Never Left","2019",["Yashaswini Raghunandan"],"/oGtbxV5NEafYE1BPCGs7kW7wirf.jpg","Bengali").
+m(786345,"Viduthalai: Part I","2023",["Vetrimaaran"],"/oTxPji8PY3PL0SK9e4mkt2laJKg.jpg","Tamil").
+m(796011,"Sarpatta Parambarai","2021",["Pa. Ranjith"],"/3f2KrEoOTmQxfDWgeqqLQ1rCYWP.jpg","Tamil").
+m(838145,"A Night of Knowing Nothing","2022",["Payal Kapadia"],"/2NpMwqmzd0u3ZHO4jzgTUHs8yFh.jpg","Hindi").
+m(842361,"Invisible Demons","2021",["Rahul Jain"],"/gD7ezX54kCQKhoII0oprQrYpkPN.jpg","Hindi").
+m(848116,"Rocky Aur Rani Kii Prem Kahaani","2023",["Karan Johar"],"/vTQIqlxUkOuyf2UKhlM2OUaFGKz.jpg","Hindi").
+m(858082,"Ponniyin Selvan: Part II","2023",["Mani Ratnam"],"/1fMM5yjLYJNfO3CSQBpfC1kqeIK.jpg","Tamil").
+m(864692,"Pathaan","2023",["Siddharth Anand"],"/arf00BkwvXo0CFKbaD9OpqdE4Nu.jpg","Hindi").
+m(872906,"Jawan","2023",["Atlee"],"/bMISXhkBDll6JPsevdJJ1ItnW6S.jpg","Hindi").
+m(885184,"Dasara","2023",["Srikanth Odela"],"/uzhNxKy20k3MiGKWLApuegbAcRD.jpg","Telugu").
+m(918864,"Vaathi","2023",["Venky Atluri"],"/e5KpHHKJEQxRSAekIWz2bvpnKd3.jpg","Tamil").
+m(937020,"Jailer","2023",["Nelson Dilipkumar"],"/pTmMxAHqX4vsIDE6HPPxOR0Q6TN.jpg","Tamil").
+m(949229,"Leo","2023",["Lokesh Kanagaraj"],"/rzSBCrS7ZSkB8quje1Na31gRze.jpg","Tamil").
+m(987895,"Maaveeran","2023",["Madonne Ashwin"],"/eTLmwObjtcZhR114TOrgb22N8CC.jpg","Tamil").

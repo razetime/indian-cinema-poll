@@ -1,0 +1,65 @@
+:- use_module('data.P').
+:- use_module(library(pairs)).
+:- use_module(library(pio)).
+:- use_module(library(dcgs)).
+:- use_module(library(debug)).
+:- use_module(library(clpz)).
+
+
+% p(U,N,Ms,R)
+
+d([X])-->X.
+d([X|Y])-->{\+Y = []},X,", ",d(Y).
+
+vts([{I,N}|L])-->"<li><a href=\"../voters/",I,".html\">",N,"</a></li>",vts(L).
+vts([])-->[].
+pg(I,N,Y,D,Rs)-->"<html><body>",
+  "<h1>",N," (",Y,")</h1>",
+  "<p class=big><b>Director:</b> ",d(D),"</p>",
+  "<h3>Rank ",Rs," in the poll!</h3>",
+  "<h3>Who voted for ",N,"</h3>",
+  {findall({A,B},(p(A,B,C,_),member(I,C)),L)},vts(L),
+  {number_chars(I,Is)},
+  "<a href=\"https://www.themoviedb.org/movie/",Is,"\">Learn more on TMDB</a>",
+  "</body></html>".
+id(M)-->"<html><body>",
+  "<h1>Results</h1>",
+  "<div>",idms(M),
+  "</div>",
+  "</body></html>".
+
+eqs(true,"").
+eqs(false,"=").
+
+idms([I-M|N])-->{length(M,L),=(L,1,T),eqs(T,S)},mvh(I,M,S),idms(N).
+idms([])     -->[].
+
+mvh(I,[M|N],S)-->mv(I,M,S),mvh(I,N,S).
+mvh(_,[],_)   -->[].
+
+mv(H,M,S)-->{m(M,N,Y,D,I,L),number_chars(H,Hn),number_chars(M,Ms)},
+  "<div>",
+  "<a href=\"films/",Ms,".html\">",
+  "<img src=\"https://image.tmdb.org/t/p/w600_and_h900_bestv2",I,"\">",
+  "<h2>",S,Hn,". ",N," (",Y,")</h2>",
+  "<h3>Dir. ",d(D),"</h3>",
+  "<h3>Language: ",L,"</h3>",
+  "</a></div>".
+
+pr(L,M):-findall(Y-Z,(nth1(X,L,Y),Z is 11-X),M).
+ctr(Lr,S,X-S):-findall(Z,member(S-Z,Lr),V),sum_list(V,X).
+
+
+rank(Dr):-findall(R,p(_,_,R,_),L),append(L,Ll),sort(Ll,Ls),
+  maplist(pr,L,Lv), append(Lv,Lr),maplist(ctr(Lr),Ls,Lc),
+  keysort(Lc,Lo),group_pairs_by_key(Lo,Lg),reverse(Lg,Gr),
+  findall(N-E,nth1(N,Gr,_-E),Dr).
+
+ungroup([X-Y|Z],U):-findall(X-V,member(V,Y),L),ungroup(Z,W),append(L,W,U).
+ungroup([],[]).
+
+e:-rank(R),ungroup(R,Ru),phrase_to_file(id(R),"index.html"),
+   m(A,B,C,D,_,_),number_chars(A,As),
+   append(["films/",As,".html"],L),
+   member(Rn-A,Ru),number_chars(Rn,Rs),
+   phrase_to_file(pg(A,B,C,D,Rs),L).

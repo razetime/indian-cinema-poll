@@ -1,0 +1,191 @@
+% made from https://gist.github.com/jrnk/8eb57b065ea0b098d571
+% generated with stax program: _" `"[^`"]+`"[,\s]"|F2/{{Ndm., *"lang(` ).`1"m
+
+:- module(langs,[lang/2]).
+
+lang( "aa",  "Afar").
+lang( "ab",  "Abkhazian").
+lang( "ae",  "Avestan").
+lang( "af",  "Afrikaans").
+lang( "ak",  "Akan").
+lang( "am",  "Amharic").
+lang( "an",  "Aragonese").
+lang( "ar",  "Arabic").
+lang( "as",  "Assamese").
+lang( "av",  "Avaric").
+lang( "ay",  "Aymara").
+lang( "az",  "Azerbaijani").
+lang( "ba",  "Bashkir").
+lang( "be",  "Belarusian").
+lang( "bg",  "Bulgarian").
+lang( "bh",  "Bihari languages").
+lang( "bi",  "Bislama").
+lang( "bm",  "Bambara").
+lang( "bn",  "Bengali").
+lang( "bo",  "Tibetan").
+lang( "br",  "Breton").
+lang( "bs",  "Bosnian").
+lang( "ca",  "Catalan; Valencian").
+lang( "ce",  "Chechen").
+lang( "ch",  "Chamorro").
+lang( "co",  "Corsican").
+lang( "cr",  "Cree").
+lang( "cs",  "Czech").
+lang( "cu",  "Church Slavic; Old Slavonic; Church Slavonic; Old Bulgarian; Old Church Slavonic").
+lang( "cv",  "Chuvash").
+lang( "cy",  "Welsh").
+lang( "da",  "Danish").
+lang( "de",  "German").
+lang( "dv",  "Divehi; Dhivehi; Maldivian").
+lang( "dz",  "Dzongkha").
+lang( "ee",  "Ewe").
+lang( "el",  "Greek, Modern (1453-)").
+lang( "en",  "English").
+lang( "eo",  "Esperanto").
+lang( "es",  "Spanish; Castilian").
+lang( "et",  "Estonian").
+lang( "eu",  "Basque").
+lang( "fa",  "Persian").
+lang( "ff",  "Fulah").
+lang( "fi",  "Finnish").
+lang( "fj",  "Fijian").
+lang( "fo",  "Faroese").
+lang( "fr",  "French").
+lang( "fy",  "Western Frisian").
+lang( "ga",  "Irish").
+lang( "gd",  "Gaelic; Scomttish Gaelic").
+lang( "gl",  "Galician").
+lang( "gn",  "Guarani").
+lang( "gu",  "Gujarati").
+lang( "gv",  "Manx").
+lang( "ha",  "Hausa").
+lang( "he",  "Hebrew").
+lang( "hi",  "Hindi").
+lang( "ho",  "Hiri Motu").
+lang( "hr",  "Croatian").
+lang( "ht",  "Haitian; Haitian Creole").
+lang( "hu",  "Hungarian").
+lang( "hy",  "Armenian").
+lang( "hz",  "Herero").
+lang( "ia",  "Interlingua (International Auxiliary Language Association)").
+lang( "id",  "Indonesian").
+lang( "ie",  "Interlingue; Occidental").
+lang( "ig",  "Igbo").
+lang( "ii",  "Sichuan Yi; Nuosu").
+lang( "ik",  "Inupiaq").
+lang( "io",  "Ido").
+lang( "is",  "Icelandic").
+lang( "it",  "Italian").
+lang( "iu",  "Inuktitut").
+lang( "ja",  "Japanese").
+lang( "jv",  "Javanese").
+lang( "ka",  "Georgian").
+lang( "kg",  "Kongo").
+lang( "ki",  "Kikuyu; Gikuyu").
+lang( "kj",  "Kuanyama; Kwanyama").
+lang( "kk",  "Kazakh").
+lang( "kl",  "Kalaallisut; Greenlandic").
+lang( "km",  "Central Khmer").
+lang( "kn",  "Kannada").
+lang( "ko",  "Korean").
+lang( "kr",  "Kanuri").
+lang( "ks",  "Kashmiri").
+lang( "ku",  "Kurdish").
+lang( "kv",  "Komi").
+lang( "kw",  "Cornish").
+lang( "ky",  "Kirghiz; Kyrgyz").
+lang( "la",  "Latin").
+lang( "lb",  "Luxembourgish; Letzeburgesch").
+lang( "lg",  "Ganda").
+lang( "li",  "Limburgan; Limburger; Limburgish").
+lang( "ln",  "Lingala").
+lang( "lo",  "Lao").
+lang( "lt",  "Lithuanian").
+lang( "lu",  "Luba-Katanga").
+lang( "lv",  "Latvian").
+lang( "mg",  "Malagasy").
+lang( "mh",  "Marshallese").
+lang( "mi",  "Maori").
+lang( "mk",  "Macedonian").
+lang( "ml",  "Malayalam").
+lang( "mn",  "Mongolian").
+lang( "mr",  "Marathi").
+lang( "ms",  "Malay").
+lang( "mt",  "Maltese").
+lang( "my",  "Burmese").
+lang( "na",  "Nauru").
+lang( "nb",  "Bokmål, Norwegian; Norwegian Bokmål").
+lang( "nd",  "Ndebele, North; North Ndebele").
+lang( "ne",  "Nepali").
+lang( "ng",  "Ndonga").
+lang( "nl",  "Dutch; Flemish").
+lang( "nn",  "Norwegian Nynorsk; Nynorsk, Norwegian").
+lang( "no",  "Norwegian").
+lang( "nr",  "Ndebele, South; South Ndebele").
+lang( "nv",  "Navajo; Navaho").
+lang( "ny",  "Chichewa; Chewa; Nyanja").
+lang( "oc",  "Occitan (post 1500)").
+lang( "oj",  "Ojibwa").
+lang( "om",  "Oromo").
+lang( "or",  "Oriya").
+lang( "os",  "Ossetian; Ossetic").
+lang( "pa",  "Panjabi; Punjabi").
+lang( "pi",  "Pali").
+lang( "pl",  "Polish").
+lang( "ps",  "Pushto; Pashto").
+lang( "pt",  "Portuguese").
+lang( "qu",  "Quechua").
+lang( "rm",  "Romansh").
+lang( "rn",  "Rundi").
+lang( "ro",  "Romanian; Moldavian; Moldovan").
+lang( "ru",  "Russian").
+lang( "rw",  "Kinyarwanda").
+lang( "sa",  "Sanskrit").
+lang( "sc",  "Sardinian").
+lang( "sd",  "Sindhi").
+lang( "se",  "Northern Sami").
+lang( "sg",  "Sango").
+lang( "si",  "Sinhala; Sinhalese").
+lang( "sk",  "Slovak").
+lang( "sl",  "Slovenian").
+lang( "sm",  "Samoan").
+lang( "sn",  "Shona").
+lang( "so",  "Somali").
+lang( "sq",  "Albanian").
+lang( "sr",  "Serbian").
+lang( "ss",  "Swati").
+lang( "st",  "Sotho, Southern").
+lang( "su",  "Sundanese").
+lang( "sv",  "Swedish").
+lang( "sw",  "Swahili").
+lang( "ta",  "Tamil").
+lang( "te",  "Telugu").
+lang( "tg",  "Tajik").
+lang( "th",  "Thai").
+lang( "ti",  "Tigrinya").
+lang( "tk",  "Turkmen").
+lang( "tl",  "Tagalog").
+lang( "tn",  "Tswana").
+lang( "to",  "Tonga (Tonga Islands)").
+lang( "tr",  "Turkish").
+lang( "ts",  "Tsonga").
+lang( "tt",  "Tatar").
+lang( "tw",  "Twi").
+lang( "ty",  "Tahitian").
+lang( "ug",  "Uighur; Uyghur").
+lang( "uk",  "Ukrainian").
+lang( "ur",  "Urdu").
+lang( "uz",  "Uzbek").
+lang( "ve",  "Venda").
+lang( "vi",  "Vietnamese").
+lang( "vo",  "Volapük").
+lang( "wa",  "Walloon").
+lang( "wo",  "Wolof").
+lang( "xh",  "Xhosa").
+lang( "yi",  "Yiddish").
+lang( "yo",  "Yoruba").
+lang( "za",  "Zhuang; Chuang").
+lang( "zh",  "Chinese").
+lang( "zu",  "Zulu").
+
+

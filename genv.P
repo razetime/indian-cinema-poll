@@ -1,0 +1,27 @@
+:- use_module('data.P').
+:- use_module(library(pio)).
+:- use_module(library(dcgs)).
+:- use_module(library(debug)).
+
+
+% p(U,N,Ms,R)
+
+d([X])-->X.
+d([X|Y])-->{\+Y = []},X,", ",d(Y).
+mv(X)-->{m(X,N,Y,D,_,_),number_chars(X,Xs)},
+  "<tr><td><b><a href=\"../films/",Xs,".html\">",N,"</b></td>",
+  "<td>",Y,"</td><td>",d(D),"</td></tr>" .
+mvs([X|Y])-->mv(X),mvs(Y).
+mvs([])   -->[].
+cmt("")   -->[].
+cmt([X|Y])-->"<h2>Comments</h2>","<p>",[X],Y,"</p>".
+pg(N,Ms,R)-->"<html><body>",
+  "<h1>",N,"</h1>",
+  "<h2>Voted for</h2>",
+  "<table><tr><th>Film</th><th>Year</th><th>Director</th></tr>",
+  mvs(Ms),"</table>",
+  cmt(R),
+  "</body></html>".
+lnk(X)-->"voters/",X,".html".
+
+e:-p(A,B,C,D),phrase(lnk(A),L),phrase_to_file(pg(B,C,D),L).

@@ -1,3 +1,4 @@
+:- use_module('langs.P').
 :- use_module(library(csv)).
 :- use_module(library(dcgs)).
 :- use_module(library(pio)).
@@ -9,8 +10,14 @@
 :- use_module(library(http/http_open)).
 :- use_module(library(serialization/json)).
 :- use_module(library(clpz)).
+:- use_module(library(debug)).
+:- use_module(library(tabling)).
+:- use_module(library(time)).
 
-v(p(T,N,M,R))-->[T,N,_],seq(M),{length(M,10)},[R].
+% :- table gm__/2.
+:- table key/1.
+
+v(p(T,N,M,Rn))-->[T,N,_],seq(M),{length(M,10)},[R],{phrase(nb(R),Rn)}.
 l([])   -->[].
 l([A|B])-->[X],l(B),{v(A,X,[])}.
 d([D|Ds])-->[D],{char_type(D,numeric)},d(Ds).
@@ -19,36 +26,64 @@ ss-->[].
 ss-->[_],ss.
 ds(N)-->ss,d(N),{length(N,L),L#>2}.
 
+md(X)-->":- module(data,[p/4,m/6]).\n",ts(X).
+ts([X|Y])-->{write_term_to_chars(X,[double_quotes(true)],Z)},Z,".\n",ts(Y).
+ts([])   -->[].
+
+key(K):-getenv("TMDB_API_KEY",K).
+
 t(X,Y,Z):-findall(T,char_type(Y,T),U),memberd_t(X,U,Z).
 f(X,Y,Z):-tfilter(t(X),Y,Z).
 
 j(pairs(J),[X|Y],Z):-member(string(X)-R,J),j(R,Y,Z).
 j(list(J),[X|Y],Z):-nth0(X,J,R),j(R,Y,Z).
 j(J,[],J).
-j(J,_,{error,J}).
+%j(J,_,{error,J}).
 
 di(X,Y):-j(X,["job"],string(Z)),=(Z,"Director",Y).
+pr(X,Y):-j(X,["job"],string(Z)),=(Z,"Production Manager",Y).
+wr(X,Y):-j(X,["job"],string(Z)),=(Z,"Writer",Y).
 gd(X,Y):-j(X,["name"],string(Y)).
 
+maybe(string(X),X).
+maybe(null,"").
+
 gm(N,M):-once(gm_(N,M)).
-gm_(N,m(I,T,Y,D)):-once(phrase(ds(Nf),N,_)),
-  write_term(N,[double_quotes(true)]),nl,
-  number_chars(I,Nf),getenv("TMDB_API_KEY",K),
-  phrase(format_("https://api.themoviedb.org/3/movie/~s?api_key=~s\
+gm_(N,M):-once(phrase(ds(Nf),N,_)),
+  * write_term(N,[double_quotes(true)]),*nl,
+  * write(0),
+  gm__(Nf,M).
+gm__(Nf,m(I,T,Y,D,P,L)):-
+  number_chars(I,Nf),
+  key(K),phrase(format_("https://api.themoviedb.org/3/movie/~s?api_key=~s\
 &append_to_response=credits",[Nf,K]),U),
-  write_term(U,[double_quotes(true)]),nl,
-  http_open(U,S,[]),
-  get_n_chars(S,_,R),phrase(json_chars(J),R),
+  * sleep(2),
+  write_term(U,[double_quotes(true)]),*nl,
+  http_open(U,S,[status_code(Cod)]),
+  write(Cod),nl,
+  get_n_chars(S,_,R),
+  phrase(json_chars(J),R),
   j(J,["title"],string(T)),
   j(J,["release_date"],string(C)),length(Y,4),append(Y,_,C),
-  j(J,["credits","crew"],list(Cr)),tfilter(di,Cr,Dr),maplist(gd,Dr,D)
-  .
+  j(J,["credits","crew"],list(Cr)),tfilter(di,Cr,Dr),maplist(gd,Dr,D),
+  j(J,["poster_path"],Pp),maybe(Pp,P),
+  j(J,["original_language"],string(O)),
+  lang(O,L).
 
-en(p(T,N,M,R)):-
-  maplist(gm,M,Ms),
-  asserta(p(T,N,Ms,R)).
+nb(['\n'|X])-->"<br>",nb(X).
+nb([X|Y])-->{\+ X = '\n'}, [X] , nb(Y).
+nb([])-->[].
 
-e(Mu):-phrase_from_file(parse_csv(frame(_,D)),"data.csv"),
-  phrase(l(U),D),maplist(en,U)
-  findall(M,p(_,_,M,_),Ms),append(Ms,Ml),sort(Ml,Mu)
-  .
+mi(m(I,_,_,_,_,_),I).
+en(p(T,N,M,R),{Ms,p(U,N,Mi,R)}):-f(numeric,T,V),f(alnum,N,O),append(V,O,U),
+  write(N),nl,
+  maplist(gm,M,Ms),maplist(mi,Ms,Mi).
+fst({X,_},X).
+snd({_,Y},Y).
+
+e(L):-phrase_from_file(parse_csv(frame(_,D)),"data.csv"),
+  phrase(l(U),D),maplist(en,U,F),
+  maplist(fst,F,M),append(M,Mc),sort(Mc,Ms),
+  maplist(snd,F,P),
+  append(P,Ms,L),
+  phrase_to_file(md(L),"data.P").
