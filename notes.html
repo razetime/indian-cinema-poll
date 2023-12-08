@@ -17,6 +17,9 @@
     <p>The data is parsed in <code>conv.rb</code>, and the movie and voter data is stored as prolog data in <code>data2.P</code>.
     Prolog is a programming language that I find is good for reasoning and generating text.</p>
     <p>Generation of the movie related pages (ranking, who voted) is done in <code>genm.P</code> and voter related pages (list, personal notes) in <code>genv.P</code>.</p>
+    <p>The final list is ranked using a Borda Count ranking system, which is a facy way to say that the first movie in your list gets 10 points, the next one 9 points, and so on.
+    This system is better when the voter to movie ratio is around 1/5, the ranking hence may be somewhat skewed. But then again, ranking movies using numbers or other objective isn't particularly accurate anyway.
+    I hope the results are not too controversial.</p>
     <p>This project was made over the course of three days, where I certainly realized that my prolog skills were inadequate for web oriented work.
     It was certainly newer to me than I expected, and not as easy as I thought. However, it was still very fun to do and I'm very happy that I
     was able to do some coding work that wasn't the usual stuff I deal with in academia.</p>
