@@ -1,4 +1,4 @@
-:- use_module('data.P').
+:- use_module('data2.P').
 :- use_module(library(pairs)).
 :- use_module(library(pio)).
 :- use_module(library(dcgs)).
@@ -13,38 +13,65 @@ d([X|Y])-->{\+Y = []},X,", ",d(Y).
 
 vts([{I,N}|L])-->"<li><a href=\"../voters/",I,".html\">",N,"</a></li>",vts(L).
 vts([])-->[].
-pg(I,N,Y,D,Rs)-->"<html><body>",
+pg(I,N,Y,D,Rs)-->"<html>",
+  "<head><link rel=\"stylesheet\" href=\"..\\skeleton.css\">",
+  "<link rel=stylesheet href=\"..\\style.css\">",
+  "</head>",
+  "<body><div class=container>",
+  "<p><a href=\"..\\index.html\">Back to Poll Results</a></p>",
   "<h1>",N," (",Y,")</h1>",
   "<p class=big><b>Director:</b> ",d(D),"</p>",
-  "<h3>Rank ",Rs," in the poll!</h3>",
-  "<h3>Who voted for ",N,"</h3>",
+  "<p class=big>Rank ",Rs," in the poll!</p>",
+  "<hr>",
+  "<h5>Who voted for ",N,"</h5>",
   {findall({A,B},(p(A,B,C,_),member(I,C)),L)},vts(L),
   {number_chars(I,Is)},
+  "<hr>",
   "<a href=\"https://www.themoviedb.org/movie/",Is,"\">Learn more on TMDB</a>",
-  "</body></html>".
-id(M)-->"<html><body>",
-  "<h1>Results</h1>",
+  "</div></body></html>".
+id(M)-->"<html>",
+  "<head><link rel=\"stylesheet\" href=\"skeleton.css\">",
+  "<link rel=stylesheet href=\"style.css\">",
+  "</head>",
+  "<body><div class=container>",
+  "<h1>Indian Cinema Server Movie Poll 2023</h1>",
+  "<h5><a href=\"voters.html\">All Voters</a></h5>",
+  "<h5><a href=\"notes.html\">Notes from the organizer</a></h5>",
+  "<hr>",
   "<div>",idms(M),
   "</div>",
-  "</body></html>".
+  "</div></body></html>".
 
 eqs(true,"").
 eqs(false,"=").
 
-idms([I-M|N])-->{length(M,L),=(L,1,T),eqs(T,S)},mvh(I,M,S),idms(N).
+
+idms([I-M|N])-->{number_chars(I,Is),length(M,L),=(L,1,T),eqs(T,S)},
+  "<h2>",Is,".</h2>",
+  mvh(I,M,S),"<hr>",idms(N).
 idms([])     -->[].
 
-mvh(I,[M|N],S)-->mv(I,M,S),mvh(I,N,S).
+mvh(I,[M,A,B|N],S)-->"<div class=row>",
+  mv(I,M,S),mv(I,A,S),mv(I,B,S),
+  "</div>",mvh(I,N,S).
+mvh(I,[A,B],S)-->"<div class=row>",
+  mv(I,A,S),mv(I,B,S),
+  "</div>".
+mvh(I,[B],S)-->"<div class=row>",
+  mv(I,B,S),
+  "</div>".
 mvh(_,[],_)   -->[].
 
-mv(H,M,S)-->{m(M,N,Y,D,I,L),number_chars(H,Hn),number_chars(M,Ms)},
-  "<div>",
+mv(H,M,S)-->{m(M,N,Y,I,D,P,W,L),number_chars(H,Hn),number_chars(M,Ms)},
+  "<div class=\"one-third column\">",
+  "<img class=\"u-max-full-width\" src=\"https://image.tmdb.org/t/p/w600_and_h900_bestv2",I,"\">",
+  "<br>",
   "<a href=\"films/",Ms,".html\">",
-  "<img src=\"https://image.tmdb.org/t/p/w600_and_h900_bestv2",I,"\">",
-  "<h2>",S,Hn,". ",N," (",Y,")</h2>",
-  "<h3>Dir. ",d(D),"</h3>",
-  "<h3>Language: ",L,"</h3>",
-  "</a></div>".
+  "<h3>",N," (",Y,")</h3>",
+  "</a>",
+  "<h4>Dir. ",d(D),"</h4>",
+  "<h4>Language: ",L,"</h4>",
+  "</div>".
 
 pr(L,M):-findall(Y-Z,(nth1(X,L,Y),Z is 11-X),M).
 ctr(Lr,S,X-S):-findall(Z,member(S-Z,Lr),V),sum_list(V,X).
@@ -59,7 +86,7 @@ ungroup([X-Y|Z],U):-findall(X-V,member(V,Y),L),ungroup(Z,W),append(L,W,U).
 ungroup([],[]).
 
 e:-rank(R),ungroup(R,Ru),phrase_to_file(id(R),"index.html"),
-   m(A,B,C,D,_,_),number_chars(A,As),
+   m(A,B,C,_,D,_,_,_),number_chars(A,As),
    append(["films/",As,".html"],L),
    member(Rn-A,Ru),number_chars(Rn,Rs),
    phrase_to_file(pg(A,B,C,D,Rs),L).
