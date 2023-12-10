@@ -17,6 +17,7 @@ c[1..].each{|t,n,_,*m,a|
   mn=m.map{|l|
     d=l[/\d+/]
     u="https://api.themoviedb.org/3/movie/#{d}?api_key=#{ENV["TMDB_API_KEY"]}&append_to_response=credits"
+    p u
     r=URI u
     h=Net::HTTP.get r
     j=JSON.parse h

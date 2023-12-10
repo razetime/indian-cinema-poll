@@ -20,6 +20,10 @@ p("1272023113306kriti","kriti",[136627, 54456, 21210, 19657, 69520, 252841, 3268
 p("1272023123257hiddn","hiddn",[146113, 258486, 338357, 409987, 80484, 49032, 69520, 275030, 373861, 191017],"").
 p("1272023131930charulata","charulata",[35790, 249914, 166798, 256378, 33706, 22460, 209506, 391062, 21570, 80484],"Consider this a list of 10 Indian films that all mean a lot to me. Turns out they are all great films too of course. Narrowing down one of if not the most prolific and vibrant film industries in the world to just 10 films meant that the list had to be necessarily personal. Same reason this list is actually unranked because that would just be a fool's errand. Some notes on my picks and what they mean to me. <br>1. Charulata - “Madame Bovary, c'est moi,” - Flaubert, \"Flaubert, c'est moi,\" - Chabrol, \"Charulata, c'est moi.\"<br>2. Pestonjee - a unicorn of a film that offers a vivid glimpse into the tiniest, least penetrable community in bombay [they literally live in walled colonies]. also my friend Evan needs to be quoted here when he said, \"Acting is Naseeruddin Shah making Hero Hiralal and Pestonjee in the same year.<br>3. Ajantrik - just realizing that the first 3 films on my list are all in some ways about loneliness and being inextricably drawn to someone or something that seems to offer some promise of something better. best supporting actor award to jagaddal. <br>4. Perumthachan - maybe perumthachan follows that theme too. watched this with mom on our most recent trip to india. full circle to where it all started - watching malayalam films with her when i was too young to understand them. <br>5. Aag - cinema is raj kapoor pulling nargis by her curls closer to him and nargis repeating what he has that no one else does - \"golden hair and your blue eyes\"<br>6. Deewaar - spent a large chunk of my childhood hoping to marry amitabh bachchan until my dad reminded me that they are the same age. not sholay but this is the one with all the iconic memorable lines and scenes for me. obvious double feature with james gray's we own the night.<br>7. Jait re Jait - r.i.p smita. impossible for me to pick one performance that defines her but between the impeccable cast & crew, that iconic unforgettable sdtrk and those godd*** bees, i go with this one.<br>8. Joker - murugan saar, i don't get your roberto benigni fixation but if this is what came out of you watching those movies, then pls watch on. also, i named my freelance business after a song from this film. also this film made it to this list replacing another film whose cd cover i actually got tattooed on my arm. <br>9. Rangeela - everyone else can keep their ddlj but to me it was always rangeela as the one of only 3 movies that my family took us to watch that year.<br>10. Guide - read the book every single summer growing up. a tattered copy belonging to my uncle who passed away too young because he was born with a hole in his heart. i was always told that i reminded everyone in the family of him making that book especially precious to me. i had never known anyone with an english name at the time and rosie seemed so glamorous. pity what happened with rk narayan and navketan but i love the film changes and all. just wish i identified more with rosie than raju guide though. ").
 p("1282023103339NathanRogersHancock","Nathan Rogers-Hancock",[33706, 166798, 70366, 238547, 249914, 170992, 251218, 21570, 69520, 391062],"I firmly believe that these lists should be personal, even private, if they are going to mean anything at all. But even then I'm surprised by how melancholy this turned out, and how small.").
+p("1282023215025Avocado","Avocado",[37403, 59239, 257391, 249572, 161792, 260655, 262034, 232794, 21460, 66389],"Order is arbitrary ").
+p("129202311626AndrewGarfield","Andrew Garfield ",[158023, 36810, 54357, 579974, 743563, 148265, 148284, 348892, 496331, 949229],"").
+p("129202315615MadhukarNandagudi","Madhukar Nandagudi",[275030, 896, 41053, 256641, 258535, 581501, 262476, 21210, 490078, 81648],"Not much really, deliberated a lot on the rankings and eventually it just ended up being a little random and had to leave out a lot to short list it to ten films, after that it was anything goes.").
+p("1292023114630AL","AL",[5801, 8079, 21502, 25499, 538858, 112999, 148284, 148265, 127501, 117691],"").
 p("1292023120000RaghuRanganathan","Raghu Ranganathan",[63812, 69520, 856007, 987895, 21210, 148265, 158023, 14445, 8079, 822],"I tend to shuffle movies around in my head even without rewatches, so this isn't as exact or as earnest as I want it to be. It's still a nice exercise to think about what you tend to consume, and think of a way to place them in your head.<br><br>That being said, it should be telling that I had to do everything in my power to avoid making this a 'Top 10 Tamil cinema' type list. I hope I will be back next year with more diversity under my belt.").
 m(167494,"Reason, Debate and a Story","1974","/7lg3D37J46yUCnKF6Vu0ML7J1lh.jpg",["Ritwik Kumar Ghatak"],["Bhola Tandon"],["Ritwik Kumar Ghatak"],"Bengali").
 m(41053,"Pyaasa","1957","/hS3NbehcPfJ5XElqjZXVD9wsDk1.jpg",["Guru Dutt"],["G.L. Kashmiri"],[],"Hindi").
@@ -109,7 +113,7 @@ m(743563,"Vikram","2022","/774UV1aCURb4s4JfEFg3IEMu5Zj.jpg",["Lokesh Kanagaraj"]
 m(856007,"Natchathiram Nagargiradhu","2022","/un3wdT8dfRXcGgxSUwTrGwy4Y2F.jpg",["Pa. Ranjith"],[],["Pa. Ranjith"],"Tamil").
 m(21466,"Mera Naam Joker","1970","/pGBSS3jPxWc7bkIGvqHCelAB5KR.jpg",["Raj Kapoor"],[],[],"Hindi").
 m(372226,"Visaranai","2016","/dt8NPHvuGki657VxYk3hErOb2B2.jpg",["Vetrimaaran"],[],[],"Tamil").
-m(21463,"Roja","1992","/uhfvQGbeH8Ae97pHdQ8wYd6mELj.jpg",["Mani Ratnam"],[],["Sujatha Rangarajan"],"Tamil").
+m(21463,"Roja","1992","/6kHsXNX6pJ0VQSSHWBTNCIcon4R.jpg",["Mani Ratnam"],[],["Sujatha Rangarajan"],"Tamil").
 m(82567,"Sujata","1959","/otEsyJDvnu8MDKZfGTOwnHyNEq8.jpg",["Bimal Roy"],[],[],"Hindi").
 m(272017,"Throne of Capricorn","1975","/4b0By9LE0e50H0qleuidAomOwFf.jpg",["Govindan Aravindan"],[],["Govindan Aravindan", "Thikkodiyan"],"Malayalam").
 m(14445,"Michael Madana Kama Rajan","1990","/bBW5bd2nWfAmapelcxXMqCDTwbV.jpg",["Singeetam Srinivasa Rao"],[],["Kamal Haasan", "Kader Kashmiri"],"Tamil").
@@ -134,7 +138,7 @@ m(25499,"Jaane Bhi Do Yaaro","1983","/m4K4Nj3AxrHq3ArDFQ0QcEOh8gs.jpg",["Kundan 
 m(579974,"RRR","2022","/ljHw5eIMnki3HekwkKwCCHsRSbH.jpg",["S. S. Rajamouli"],["Denitza Daverova"],[],"Telugu").
 m(350312,"Bāhubali 2: The Conclusion","2017","/21sC2assImQIYCEDA84Qh9d1RsK.jpg",["S. S. Rajamouli"],[],[],"Telugu").
 m(20453,"3 Idiots","2009","/66A9MqXOyVFCssoloscw79z8Tew.jpg",["Rajkumar Hirani"],["Bharat Jha", "Sachin Utekar", "Parshuram Mane", "Ravi Barnabas", "Salim Qureshi", "Bhavin Thakkar"],[],"Hindi").
-m(1007074,"Jigarthanda DoubleX","2023","/rlPTdgLfgsSv8WiQXRZ2AVIDwAi.jpg",["Karthik Subbaraj"],[],["Karthik Subbaraj"],"Tamil").
+m(1007074,"Jigarthanda DoubleX","2023","/a2kOwiWkx4OGV49MTweQaCmeXKD.jpg",["Karthik Subbaraj"],[],["Karthik Subbaraj"],"Tamil").
 m(876845,"Nanpakal Nerathu Mayakkam","2023","/1A6QtI5NZy3ZLmpc84p40LDm0YF.jpg",["Lijo Jose Pellissery"],[],["S. Hareesh"],"Malayalam").
 m(680652,"Karnan","2021","/z5SxDcVWa9nokynVqBHb2IKk78J.jpg",["Mari Selvaraj"],[],["Mari Selvaraj"],"Tamil").
 m(37172,"Athadu","2005","/dV2h6dx5nUatgNClkqCaKKTmA4O.jpg",["Trivikram Srinivas"],[],["Trivikram Srinivas"],"Telugu").
@@ -167,4 +171,24 @@ m(391062,"Joker","2016","/b8SaYgpEItoqaOgd6BUdH1ZvdrA.jpg",["Raju Murugan"],[],[
 m(238547,"Utsav","1984","/6H4JLznM5qEQeq6rXsqDVixAvY1.jpg",["Girish Karnad"],[],[],"Hindi").
 m(170992,"Meeting a Milestone","1989","/hbkRYLRh51rUoY5erIV4Ie7gdlK.jpg",["Goutam Ghose"],[],["Ain Rasheed Khan"],"Hindi").
 m(251218,"His Highness Abdullah","1990","/tpLfoYFKW6qkCXARGh5G4qREFKF.jpg",["Sibi Malayil"],[],["A K Lohithadas"],"Malayalam").
+m(37403,"Agneepath","1990","/d9OfOqRTrW5FX1dhDPwaMNqm6GB.jpg",["Mukul Anand"],[],["Kader Khan", "Santosh Saroj"],"Hindi").
+m(257391,"Mahal","1949","/dasVnQij6Lvbpu7qoogprheITva.jpg",["Kamal Amrohi"],[],["Kamal Amrohi"],"Hindi").
+m(249572,"Yavanika","1982","/vK5lc6MTGuy8XCytLVeIM3RF0A8.jpg",["K. G. George"],[],[],"Malayalam").
+m(161792,"Ek Duuje Ke Liye","1981","/qEh6ihTizXYc8QPcPSjEFi6Izty.jpg",["K. Balachander"],[],["K. Balachander"],"Hindi").
+m(260655,"Tarang","1984","/66UKw7fBTGNbEBdsKedp6aNGJ3e.jpg",["Kumar Shahani"],[],[],"Hindi").
+m(262034,"Hero Hiralal","1988","/wopqRualUr0E8BA0Bf3Jham194Z.jpg",["Ketan Mehta"],[],[],"Hindi").
+m(232794,"Ghulami","1985","/eV3PzmViW65DmRXtXt9y9s276fw.jpg",["J. P. Dutta"],[],[],"Hindi").
+m(66389,"Moondram Pirai","1982","/kDimtjGArqeW93Aa5tjS6kPrupB.jpg",["Balu Mahendra"],[],[],"Tamil").
+m(36810,"Pushpaka Vimana","1987","/cYr2HQHSKYGDpMlBhL6e79Dbg6H.jpg",["Singeetam Srinivasa Rao"],[],["Singeetam Srinivasa Rao"],"Kannada").
+m(54357,"Sadma","1983","/5XJpcUUM3uN2QyGJowL1awY4mTX.jpg",["Balu Mahendra"],[],[],"Hindi").
+m(148284,"Enthiran","2010","/4Y0VoR5Nxi33SALjvd5j9UfkZEe.jpg",["Shankar"],[],[],"Tamil").
+m(348892,"Bajrangi Bhaijaan","2015","/rNfToRJw35h7a4y6HXGRgfkLvdc.jpg",["Kabir Khan"],["Hemant Kumar Dixit", "Tegveer Singh", "Kunal R Khanna", "Pankaj Pandya"],[],"Hindi").
+m(496331,"Brahmāstra Part One: Shiva","2022","/x61qdvHIsr9U53FwoLVDQqAGur0.jpg",["Ayan Mukerji"],[],["Ayan Mukerji"],"Hindi").
+m(258535,"The Ritual","1977","/Ch2ERn0ZByI4e2FcQ7hsWgoFYT.jpg",["Girish Kasaravalli"],[],["K.V. Subanna"],"Kannada").
+m(581501,"Accident","1985","/aPCqLuAyFLWJ2BFuyFd9i5o3VdL.jpg",["Shankar Nag"],[],["Vasant Mukashi"],"Kannada").
+m(262476,"Ulidavaru Kandanthe","2014","/b7Ee4DKKhNVYNV84rovdqcWXjgt.jpg",["Rakshit Shetty"],[],["Rakshit Shetty"],"Kannada").
+m(490078,"Ee.Ma.Yau.","2018","/8NfC32RyRkgAFzQuW42PW3TigDv.jpg",["Lijo Jose Pellissery"],[],[],"Malayalam").
+m(21502,"Satya","1998","/wua2Fq5MLqRMNC2azapa74CZ2z2.jpg",["Ram Gopal Varma"],[],[],"Hindi").
+m(127501,"Barfi!","2012","/8lVuWmArvr41CvyvpgI3elD5iB1.jpg",["Anurag Basu"],[],[],"Hindi").
+m(117691,"Gangs of Wasseypur - Part 1","2012","/yd7ltAY4j2tRrLAFpVVqh9EhahC.jpg",["Anurag Kashyap"],[],["Zeishan Quadri"],"Hindi").
 m(63812,"Thillalangadi","2010","/el80HjFo2lbXtdpeaJKossULUgG.jpg",["Mohan Raja"],[],[],"Tamil").
